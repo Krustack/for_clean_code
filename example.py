@@ -27,7 +27,7 @@ def heal(character):
 def game():
     player = create_character("Player", 100, 20)
     dragon = create_character("dragon", 100, 15)
-
+    print("Welcome to the dragon slayer game!") #can change to your game name
     while is_alive(player) and is_alive(dragon):
         print(f"\n{player['name']}'s Health: {player['health']}, {dragon['name']}'s Health: {dragon['health']}")
         player_choice = input("Enter 1 to attack\nEnter 2 to defend \nEnter 3 to heal\nplease enter 1 - 3 for play!: ")
